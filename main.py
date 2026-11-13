@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 
-arr = [100,200,300,400,500]
+arr = [100,200,300,400,500,600]
 
 st.write("Mean:", np.mean(arr))
 st.write("Max:", np.max(arr))
@@ -23,3 +23,6 @@ if file is not None:
 
 # a = input("Enter a number: ")
 # print("You entered:", a)
+
+second_highest = np.max((arr)[:-1])
+st.write("Second Highest:", second_highest)
